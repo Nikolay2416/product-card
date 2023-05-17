@@ -1,4 +1,4 @@
-import headphones from "../../assets/image 2.jpg";
+import headphones from "../../assets/Headphones.jpg";
 import "./productCard.scss";
 
 const ProductCard = () => {
