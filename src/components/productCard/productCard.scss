@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+
+  @media (min-height: 888px) {
+      height: 100vh;
+  }
+ 
+  &_body {
+    margin: 25px 0px;
+    width: 400px;
+    height: 838px;
+    background: #FFFFFF;
+    border: 1px solid #E7E6EB;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+
+    @media (max-width: 500px) {
+      margin: 0px 0px;
+      border: none;
+      box-shadow: none;
+      border-radius: none;
+    }
+
+    @media (max-width: 400px) {
+      width: 300px;
+    }
+
+    &_img {
+      margin: 40px 71px 24px 71px;
+      width: 258px;
+      height: 258px;
+
+      @media (max-width: 400px) {
+        margin: 5px auto;
+      }
+
+      & img {
+        width: 258px;
+        height: 258px;
+      }
+    }
+
+    &_content {
+      margin: 0px 40px;
+
+      @media (max-width: 400px) {
+        margin: 0px 10px;
+      }
+
+      &_price {
+        font-weight: 700;
+        font-size: 32px;
+        color: #333333;
+        margin-bottom: 16px;
+      }
+
+      &_title {
+        font-weight: 500;
+        font-size: 24px;
+        color: #333333;
+        margin-bottom: 8px;
+      }
+
+      &_description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+
+      &_color-selection {
+        font-weight: 400;
+        font-size: 16px;
+        color: #666666;
+        margin-bottom: 16px;
+      }
+
+      &_color-selection-button {
+        display: flex;
+        margin-bottom: 46px;
+
+        &_item {
+
+          & button {
+            margin-right: 16px;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #FFFFFF;
+            border-radius: 50%;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+          }
+        }
+      }
+
+      &_add-to-cart {
+        width: 320px;
+        height: 55px;
+        background: #FBBF23;
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 29px;
+
+        @media (max-width: 400px) {
+          width: 280px;
+        }
+      }
+
+      &_buy-now {
+        width: 320px;
+        height: 55px;
+        background-color: #FFFFFF;
+        border: 1px solid #61A5FA;
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 32px;
+
+        @media (max-width: 400px) {
+          width: 280px;
+        }
+      }
+
+      &_read-reviews {
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration-line: underline;
+        color: #61A5FA;
+      }
+    }
+  }
+}
+
+.button-color-red {
+  & button {
+    background: #EE4444;
+  }
+}
+
+.button-color-blue {
+  & button {
+    background: #3C81F6;
+  }
+}
+
+.button-color-black {
+  & button {
+    background: #000000;
+  }
+}
+
+.button-color-active {
+  & button {
+    border: 4px solid #000000;
+  }
+}

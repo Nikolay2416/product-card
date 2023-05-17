@@ -1,5 +1,4 @@
-import ProductCard from "../productCard/ProductCard"
-
+import ProductCard from "../productCard/ProductCard";
 import "./app.scss";
 
 function App() {
