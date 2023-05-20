@@ -11,7 +11,7 @@
   }
  
   &_body {
-    margin: 25px 0px;
+    margin: 81px 0px;
     width: 400px;
     height: 838px;
     background: #FFFFFF;
@@ -56,6 +56,7 @@
         font-weight: 700;
         font-size: 32px;
         color: #333333;
+        line-height: 38px;
         margin-bottom: 16px;
       }
 
@@ -64,25 +65,27 @@
         font-size: 24px;
         color: #333333;
         margin-bottom: 8px;
+        line-height: 28px;
       }
 
       &_description {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
       }
 
       &_color-selection {
         font-weight: 400;
         font-size: 16px;
         color: #666666;
-        margin-bottom: 16px;
+        line-height: 16px;
+        margin-bottom: 18px;
       }
 
       &_color-selection-button {
         display: flex;
-        margin-bottom: 46px;
+        margin-bottom: 32px;
 
         &_item {
 
@@ -105,7 +108,7 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 28px;
-        margin-bottom: 29px;
+        margin-bottom: 16px;
 
         @media (max-width: 400px) {
           width: 280px;
@@ -121,7 +124,7 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 28px;
-        margin-bottom: 32px;
+        margin-bottom: 36px;
 
         @media (max-width: 400px) {
           width: 280px;

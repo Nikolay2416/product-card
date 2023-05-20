@@ -1,7 +1,15 @@
+import React, { useState } from "react";
+
 import headphones from "../../assets/Headphones.jpg";
 import "./productCard.scss";
 
 const ProductCard = () => {
+  const [activeColor, setActiveColor] = useState("red");
+
+  const handleColorClick = (color: string) => {
+    setActiveColor(color);
+  };
+  
   return (
     <div className="card">
       <div className="card_body">
@@ -16,13 +24,28 @@ const ProductCard = () => {
           </p>
           <p className="card_body_content_color-selection">Choose your colour</p>
           <div className="card_body_content_color-selection-button">
-            <div className="card_body_content_color-selection-button_item button-color-red button-color-active">
-              <button ></button>
-            </div>
-            <div className="card_body_content_color-selection-button_item button-color-blue">
+            <div
+              className={`card_body_content_color-selection-button_item button-color-red ${
+                activeColor === "red" && "button-color-active"
+              }`}
+              onClick={() => handleColorClick("red")}
+            >
               <button></button>
             </div>
-            <div className="card_body_content_color-selection-button_item button-color-black">
+            <div
+              className={`card_body_content_color-selection-button_item button-color-blue ${
+                activeColor === "blue" && "button-color-active"
+              }`}
+              onClick={() => handleColorClick("blue")}
+            >
+              <button></button>
+            </div>
+            <div
+              className={`card_body_content_color-selection-button_item button-color-black ${
+                activeColor === "black" && "button-color-active"
+              }`}
+              onClick={() => handleColorClick("black")}
+            >
               <button></button>
             </div>
           </div>
